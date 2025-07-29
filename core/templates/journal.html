@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Journal - mind.exe{% endblock %}
+
+{% block content %}
+    <div class="journal-container">
+        <h1>📔 Your Journal</h1>
+        <p>Write your thoughts, feelings, dreams — this space is *just* for you.</p>
+
+        <form method="post">
+            {% csrf_token %}
+            <textarea name="entry" rows="10" placeholder="Start writing...">{{ saved_entry }}</textarea>
+            <br>
+            <button type="submit" class="btn">💾 Save Entry</button>
+        </form>
+
+        {% if message %}
+            <p style="color: green; margin-top: 10px;">{{ message }}</p>
+        {% endif %}
+    </div>
+{% endblock %}

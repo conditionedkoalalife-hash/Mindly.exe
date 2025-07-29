@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Daily Affirmations - mind.exe{% endblock %}
+
+{% block content %}
+    <div class="affirmations-container">
+        <h1>💬 Daily Affirmations</h1>
+        <p>You got this. You always have. You always will. 💖</p>
+
+        <div class="affirmation-box">
+            <blockquote>
+                “I am doing my best, and that is enough.”
+            </blockquote>
+            <blockquote>
+                “I am worthy of love, peace, and good mental health.”
+            </blockquote>
+            <blockquote>
+                “My feelings are valid. My healing is happening.”
+            </blockquote>
+        </div>
+
+        <button onclick="getRandomAffirmation()">🔁 New Affirmation</button>
+        <p id="new-affirmation" style="margin-top: 20px; font-weight: bold;"></p>
+    </div>
+
+    <script>
+        const affirmations = [
+            "I am strong, capable, and resilient.",
+            "My mind is a safe and healthy space.",
+            "I give myself permission to rest and recharge.",
+            "Every day I grow healthier and happier.",
+            "I am proud of how far I’ve come."
+        ];
+
+        function getRandomAffirmation() {
+            const randomIndex = Math.floor(Math.random() * affirmations.length);
+            document.getElementById('new-affirmation').innerText = affirmations[randomIndex];
+        }
+    </script>
+{% endblock %}

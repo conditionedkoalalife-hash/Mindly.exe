@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome to mind.exe{% endblock %}
+
+{% block content %}
+    <div class="home-container">
+        <h1>Welcome to mind.exe 👋</h1>
+        <p>Your mental health dashboard, right at your fingertips.</p>
+        
+        <div class="features">
+            <ul>
+                <li><a href="{% url 'journal' %}">📝 Daily Journal</a></li>
+                <li><a href="{% url 'affirmations' %}">💬 Daily Affirmations</a></li>
+                <li><a href="{% url 'connect' %}">🧍 Talk to a Psychiatrist</a></li>
+                <li><a href="{% url 'register' %}">Journal</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

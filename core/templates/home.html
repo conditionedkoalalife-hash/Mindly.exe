@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - mind.exe{% endblock %}
+
+{% block content %}
+    <div class="home-container">
+        <h1>👋 Welcome to mind.exe</h1>
+        <p>Your mental health sidekick, 24/7 🧠🌱</p>
+
+        <div class="feature-buttons">
+            <a href="{% url 'affirmations' %}" class="btn">💬 Daily Affirmations</a>
+            <a href="{% url 'journal' %}" class="btn">📔 Journal</a>
+            <a href="{% url 'logout' %}" class="btn logout-btn">🚪 Logout</a>
+            <li><a href="{% url 'register' %}">Journal</a></li>
+        </div>
+    </div>
+{% endblock %}
