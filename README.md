@@ -22,7 +22,7 @@ In a fast-paced world, mental health often takes a backseat. Our goal with **MIN
 ## 🚀 How to Run Locally
 1. **Clone the Repository**:
 ```bash
-git clone https://github.com/conditionedkoalahash/mind-exe.git
+git clone https://github.com/conditionedkoalalife-hash/mind-exe.git
 cd mind-exe
 Create a Virtual Environment (optional but recommended):
 3. python -m venv env
